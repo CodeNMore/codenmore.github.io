@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset="UTF-8">
+    <title>CribCount</title>
+    <style>
+      .scoreb {
+        color: blue;
+      }
+      .scorer {
+        color: red;
+      }
+      .centera {
+        text-align: center;
+        font-size: 44pt;
+      }
+      .minus {
+        font-size: 40pt;
+        font-weight: bold;
+      }
+      #controls {
+        text-align: center;
+        height: 90%;
+      }
+      .btn {
+        width: 45%;
+        height: 8%;
+        font-size: 38pt;
+        font-weight: bold;
+      }
+    </style>
+    
+    <script>
+      
+      var blue, red, finish = 120, skunk = 91;
+      var bs, rs, rstct = 0;
+      
+      function load(){
+        bs = document.getElementById("bluescore");
+        rs = document.getElementById("redscore");
+        reset();
+      }
+      
+      function resetct(){
+        rstct++;
+        if(rstct > 2)
+          reset();
+      }
+      
+      function reset(){
+        blue = 0;
+        red = 0;
+        rstct = 0;
+        check();
+      }
+      
+      function addb(amt){
+        blue += amt;
+        check();
+      }
+      
+      function addr(amt){
+        red += amt;
+        check();
+      }
+      
+      function check(){
+        bs.innerHTML = blue;
+        rs.innerHTML = red;
+        
+        if(blue > 120){
+          finishb();
+        }else if(red > 120){
+          finishr();
+        }
+      }
+      
+      function finishb(){
+        if(red < skunk){
+          alert("Blue won the match and SKUNKED Red!");
+        }else{
+          alert("Blue won the match!");
+        }
+      }
+      
+      function finishr(){
+        if(blue < skunk){
+          alert("Red won the match and SKUNKED Blue!");
+        }else{
+          alert("Red won the match!");
+        }
+      }
+      
+    </script>
+  </head>
+  <body onload = "load()">
+    
+    <div class = "centera">
+      <input class = "minus" type = "button" onClick = "addb(-1)" value = "-1" style = "color: blue;"> <span class = "scoreb" id = "bluescore">#</span> | <span class = "scorer" id = "redscore">#</span> <input class = "minus" type = "button" onClick = "addr(-1)" value = "-1" style = "color: red;">
+    </div>
+    <br>
+    <div id = "controls">
+      <input class = "btn" type = "button" onClick = "addb(1)" value = "+1" style = "color: blue;">
+      <input class = "btn" type = "button" onClick = "addr(1)" value = "+1" style = "color: red;"><br><br>
+      <input class = "btn" type = "button" onClick = "addb(2)" value = "+2" style = "color: blue;">
+      <input class = "btn" type = "button" onClick = "addr(2)" value = "+2" style = "color: red;"><br><br>
+      <input class = "btn" type = "button" onClick = "addb(3)" value = "+3" style = "color: blue;">
+      <input class = "btn" type = "button" onClick = "addr(3)" value = "+3" style = "color: red;"><br><br>
+      <input class = "btn" type = "button" onClick = "addb(4)" value = "+4" style = "color: blue;">
+      <input class = "btn" type = "button" onClick = "addr(4)" value = "+4" style = "color: red;"><br><br>
+      <input class = "btn" type = "button" onClick = "addb(5)" value = "+5" style = "color: blue;">
+      <input class = "btn" type = "button" onClick = "addr(5)" value = "+5" style = "color: red;"><br><br>
+      <input class = "btn" type = "button" onClick = "addb(6)" value = "+6" style = "color: blue;">
+      <input class = "btn" type = "button" onClick = "addr(6)" value = "+6" style = "color: red;"><br><br><br>
+      <input class = "btn" type = "button" onClick = "resetct()" value = "RESET" style = "width: 88%;">
+    </div>
+    
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
