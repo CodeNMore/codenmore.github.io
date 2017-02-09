@@ -1,21 +1,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Electro Tool Pack!</title>
-		<script>
-		  function resistCalc(){
-		    var vPower = document.getElementById("vPower").value;
-		    var vComp = document.getElementById("vComp").value;
-		    var volts = vPower - vComp;
-		    var amps = document.getElementById("aComp").value;
-		    
-		    document.getElementById("rCalcOut").innerHTML = volts / amps;
-		  }
-		</script>
+		<title>Electro Helper!</title>
 	</head>
 	<body>
-		<h1>Electro Tool Pack!</h1>
-		<h2>Resistor Color Codes</h2>
+		<h1>Resistor Color Codes</h1>
 		<table border = "1">
 			<tr>
 				<th>Color</th>
@@ -101,11 +90,5 @@
 				<td>&plusmn;10%</td>
 			</tr>
 		</table>
-		<!--CALCULATOR FOR RESISTOR VALUES-->
-		<h2>What Resistor to Use?</h2>
-		Resistance (Ohms) = Voltage(Volts) / Current (Amps)<br>
-		Power Source Voltage: <input type = "number" id = "vPower"> Component Voltage: <input type = "number" id = "vComp"><br>
-		Component Amps: <input type = "number" id = "aComp"> (Be sure your calculation is in amps, not milliamps!)<br>
-		<input type = "button" value = "Calculate!" onclick = "resistCalc()"> Resistor Value: <span id = "rCalcOut"></span>
 	</body>
 </html>
