@@ -1,0 +1,145 @@
+
+atlas.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+inventorySlot
+  rotate: false
+  xy: 0, 0
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+enemydown
+  rotate: false
+  xy: 32, 0
+  size: 25, 32
+  orig: 25, 32
+  offset: 0, 0
+  index: -1
+enemyleft
+  rotate: false
+  xy: 57, 0
+  size: 25, 32
+  orig: 25, 32
+  offset: 0, 0
+  index: -1
+enemyright
+  rotate: false
+  xy: 82, 0
+  size: 25, 32
+  orig: 25, 32
+  offset: 0, 0
+  index: -1
+enemyup
+  rotate: false
+  xy: 107, 0
+  size: 25, 32
+  orig: 25, 32
+  offset: 0, 0
+  index: -1
+playerdown
+  rotate: false
+  xy: 132, 0
+  size: 25, 32
+  orig: 25, 32
+  offset: 0, 0
+  index: -1
+playerleft
+  rotate: false
+  xy: 157, 0
+  size: 25, 32
+  orig: 25, 32
+  offset: 0, 0
+  index: -1
+playerright
+  rotate: false
+  xy: 182, 0
+  size: 25, 32
+  orig: 25, 32
+  offset: 0, 0
+  index: -1
+playerup
+  rotate: false
+  xy: 207, 0
+  size: 25, 32
+  orig: 25, 32
+  offset: 0, 0
+  index: -1
+dirt
+  rotate: false
+  xy: 232, 16
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+flashlight
+  rotate: false
+  xy: 232, 0
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+grass
+  rotate: false
+  xy: 248, 16
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+lazer
+  rotate: false
+  xy: 248, 0
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+radio
+  rotate: false
+  xy: 264, 16
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+stone
+  rotate: false
+  xy: 264, 0
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+thermalimager
+  rotate: false
+  xy: 280, 16
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+heart
+  rotate: false
+  xy: 280, 8
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+post
+  rotate: false
+  xy: 296, 0
+  size: 8, 32
+  orig: 8, 32
+  offset: 0, 0
+  index: -1
+energy
+  rotate: false
+  xy: 304, 20
+  size: 6, 12
+  orig: 6, 12
+  offset: 0, 0
+  index: -1
+color
+  rotate: false
+  xy: 280, 7
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
