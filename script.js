@@ -2,8 +2,8 @@
 var JAN=0,FEB=1,MAR=2,APR=3,MAY=4,JUN=5,JUL=6,AUG=7,SEP=8,OCT=9,NOV=10,DEC=11;
 
 // SETTING VARIABLES HERE! 	  YEAR, MON, DAY, 	HR(12), PM?, 	MIN
-var streamStartEST = makeDate(2017, FEB, 9, 	5,		true,	14);
-var streamEndEST   = makeDate(2017, FEB, 9,		5,		true,	15);
+var streamStartEST = makeDate(2017, FEB, 9, 	5,		true,	15);
+var streamEndEST   = makeDate(2017, FEB, 9,		5,		true,	18);
 // END SETTINGS
 
 $(document).ready(function(){
@@ -24,6 +24,8 @@ $(document).ready(function(){
 		var est = utc + estOffset;
 
 		var date = new Date(est);
+
+		alert("DEBUG: Running auto");
 
 		// Determine if we need to show live or not live
 		if(date >= streamStartEST && date < streamEndEST){
