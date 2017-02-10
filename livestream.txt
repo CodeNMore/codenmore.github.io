@@ -11,8 +11,8 @@
 		"year": 	2017,
 		"month": 	"FEB",
 		"day": 		10,
-		"hour": 	4,
+		"hour": 	3,
 		"pm": 		true,
-		"min": 		0
+		"min": 		35
 	}
 }
