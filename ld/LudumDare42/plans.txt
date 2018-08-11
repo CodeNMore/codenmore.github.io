@@ -1,0 +1,10 @@
+Theme: Running Out of Space
+
+A speed-runner game, screen cut off Space|Void
+Must make it out of space, into the "void"
+
+...*.......XXXX
+.*....*...XXXXX
+..*...*..XXXXXX
+*......*.*XXXXX
+..*.......XXXXX
