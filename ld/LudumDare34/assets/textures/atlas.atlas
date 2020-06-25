@@ -1,0 +1,363 @@
+
+atlas.png
+size: 1024,512
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+buttonTile
+  rotate: false
+  xy: 960, 496
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+buttonTilePressed
+  rotate: false
+  xy: 640, 196
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+cannon
+  rotate: false
+  xy: 32, 16
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+cannonball
+  rotate: false
+  xy: 992, 472
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+color
+  rotate: false
+  xy: 960, 433
+  size: 1, 1
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
+destroyIcon
+  rotate: false
+  xy: 32, 0
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+dirt
+  rotate: false
+  xy: 960, 480
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+drill.1
+  rotate: false
+  xy: 976, 496
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+drill.2
+  rotate: false
+  xy: 640, 180
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+drill.3
+  rotate: false
+  xy: 656, 196
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+energyIcon
+  rotate: false
+  xy: 640, 140
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+farmTile
+  rotate: false
+  xy: 48, 16
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+foodIcon
+  rotate: false
+  xy: 656, 156
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+freezeball
+  rotate: false
+  xy: 672, 172
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+freezer
+  rotate: false
+  xy: 48, 0
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+generator.1
+  rotate: false
+  xy: 960, 464
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+generator.2
+  rotate: false
+  xy: 976, 480
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+generator.3
+  rotate: false
+  xy: 992, 496
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+grass
+  rotate: false
+  xy: 1008, 496
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+grassD
+  rotate: false
+  xy: 640, 164
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+grassL
+  rotate: false
+  xy: 656, 180
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+grassR
+  rotate: false
+  xy: 672, 196
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+grassT
+  rotate: false
+  xy: 64, 16
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+introScreen
+  rotate: false
+  xy: 640, 272
+  size: 320, 240
+  orig: 320, 240
+  offset: 0, 0
+  index: -1
+lazer
+  rotate: false
+  xy: 64, 0
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+lazerball
+  rotate: false
+  xy: 688, 188
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+lostScreen
+  rotate: false
+  xy: 0, 32
+  size: 640, 480
+  orig: 640, 480
+  offset: 0, 0
+  index: -1
+nextArrow
+  rotate: false
+  xy: 960, 434
+  size: 7, 14
+  orig: 7, 14
+  offset: 0, 0
+  index: -1
+prevArrow
+  rotate: false
+  xy: 976, 450
+  size: 7, 14
+  orig: 7, 14
+  offset: 0, 0
+  index: -1
+radius
+  rotate: false
+  xy: 0, 0
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+resourceIcon
+  rotate: false
+  xy: 704, 204
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+slime.1
+  rotate: false
+  xy: 80, 8
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+slime.2
+  rotate: false
+  xy: 80, 0
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+slime.3
+  rotate: false
+  xy: 96, 24
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+slime.4
+  rotate: false
+  xy: 967, 440
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+slime.5
+  rotate: false
+  xy: 983, 456
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+slimer.1
+  rotate: false
+  xy: 992, 464
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+slimer.2
+  rotate: false
+  xy: 1000, 472
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+slimer.3
+  rotate: false
+  xy: 640, 132
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+slimer.4
+  rotate: false
+  xy: 648, 140
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+slimer.5
+  rotate: false
+  xy: 656, 148
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+stoneTile
+  rotate: false
+  xy: 960, 448
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+tank.down
+  rotate: false
+  xy: 976, 464
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+tank.left
+  rotate: false
+  xy: 992, 480
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+tank.right
+  rotate: false
+  xy: 1008, 480
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+tank.up
+  rotate: false
+  xy: 640, 148
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+tutOverlay
+  rotate: false
+  xy: 640, 212
+  size: 320, 60
+  orig: 320, 60
+  offset: 0, 0
+  index: -1
+wallF
+  rotate: false
+  xy: 656, 164
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+wallFwood
+  rotate: false
+  xy: 672, 180
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+wallT
+  rotate: false
+  xy: 688, 196
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+wallTwood
+  rotate: false
+  xy: 80, 16
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1

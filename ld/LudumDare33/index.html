@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+       <head>
+              <title>LD33 - Saucer</title>
+              <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+              <link href="styles.css" rel="stylesheet" type="text/css">
+              <script src="soundmanager2-setup.js"></script>
+  			  <script src="soundmanager2-jsmin.js"></script>
+       </head>
+
+       <body>
+              <div align="center" id="embed-html"></div>
+              <script type="text/javascript" src="html/html.nocache.js"></script>
+              <div style = "text-align: center;color: white">PRESS "M" TO MUTE THE MUSIC!<br>You can use the '/' key to pause/resume the game!<br>Please see <a href = "http://ludumdare.com/compo/ludum-dare-33/?action=preview&amp;uid=33942" target = "_blank">this Ludum Dare</a> entry page for information!<br>This game was made by CodeNMore in under 48 hours for Ludum Dare #33!</div>
+       </body>
+
+       <script>
+              function handleMouseDown(evt) {
+                evt.preventDefault();
+                evt.stopPropagation();
+                evt.target.style.cursor = 'default';
+              }
+
+              function handleMouseUp(evt) {
+                evt.preventDefault();
+                evt.stopPropagation();
+                evt.target.style.cursor = '';
+              }
+              document.getElementById('embed-html').addEventListener('mousedown', handleMouseDown, false);
+              document.getElementById('embed-html').addEventListener('mouseup', handleMouseUp, false);
+       </script>
+</html>

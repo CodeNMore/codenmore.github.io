@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit trunk//EN" "http://google-web-toolkit.googlecode.com/svn/trunk/distro-source/core/src/gwt-module.dtd">
+<module rename-to="html">
+	<inherits name='com.badlogic.gdx.backends.gdx_backends_gwt' />
+
+	<inherits name='Main' />
+	<entry-point class='development.codenmore.ld33.client.HtmlLauncher' />
+	
+	<set-configuration-property name="gdx.assetpath" value="../core/assets" />
+	
+	<extend-configuration-property name="gdx.reflect.include" value="development.codenmore.ld33.buildings" />
+	<extend-configuration-property name="gdx.reflect.include" value="development.codenmore.ld33.entities.components" />
+	<extend-configuration-property name="gdx.reflect.include" value="development.codenmore.ld33.days.Day" />
+	<extend-configuration-property name="gdx.reflect.include" value="development.codenmore.ld33.entities.Entity" />
+	<extend-configuration-property name="gdx.reflect.include" value="development.codenmore.ld33.entities.Cow" />
+	<extend-configuration-property name="gdx.reflect.include" value="development.codenmore.ld33.entities.Human" />
+	<extend-configuration-property name="gdx.reflect.include" value="development.codenmore.ld33.entities.HumanShooter" />
+	<extend-configuration-property name="gdx.reflect.include" value="development.codenmore.ld33.entities.Rock" />
+	<extend-configuration-property name="gdx.reflect.include" value="development.codenmore.ld33.entities.Turret" />
+	<extend-configuration-property name="gdx.reflect.include" value="development.codenmore.ld33.level.Level" />
+</module>

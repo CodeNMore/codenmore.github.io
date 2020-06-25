@@ -1,0 +1,46 @@
+{
+	"class": "development.codenmore.ld33.days.Day",
+	"biome": 2,
+	"nightTime": 60,
+	"quota": 12,
+	"maxCows": 3,
+	"maxHumans": 12,
+	"humanShooterChance": 0.65,
+	"minCowTime": 3.9,
+	"maxCowTime": 5.9,
+	"minHumanTime": 3.5,
+	"maxHumanTime": 4.4,
+	"buildings": [
+		{
+			"class": "development.codenmore.ld33.buildings.Barn",
+			"x": 20
+		},
+		{
+			"class": "development.codenmore.ld33.buildings.TallBuilding",
+			"x": 390
+		},
+		{
+			"class": "development.codenmore.ld33.buildings.TallBuilding",
+			"x": 460
+		},
+		{
+			"class": "development.codenmore.ld33.buildings.TallBuilding",
+			"x": 230
+		}
+	],
+	"entities": [
+		{
+			"class": "development.codenmore.ld33.entities.Rock",
+			"x": 380
+		},
+		{
+			"class": "development.codenmore.ld33.entities.Rock",
+			"x": 460
+		},
+		{
+			"class": "development.codenmore.ld33.entities.Turret",
+			"x": 200,
+			"shootTime": 4.4
+		}
+	]
+}
