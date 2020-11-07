@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+button {
+    border: 2px solid #032B43;
+    border-radius: 16px;
+}
+
+button:active {
+    transform: scale(0.85);
+}
+
+header {
+    text-align: center;
+    color: #032B43;
+    width: 100%;
+    margin: 1rem;
+}
+
+header h1 {
+    margin: 1rem;
+}
+
+main {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#start {
+    margin: auto 4rem;
+    padding: 2rem;
+    border: 4px solid #032B43;
+    border-radius: 16px;
+}
+
+#won {
+    margin: auto 0;
+    padding: 2rem;
+    border: 4px solid #032B43;
+    border-radius: 16px;
+}
+
+#start button {
+    margin: 2rem 2rem 0 2rem;
+    min-width: 350px;
+    font-size: 2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 0.25rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #032B43;
+    color: #F4F4F9;
+}
+
+.main-game-area {
+    display: flex;
+    justify-content: space-around;
+}
+
+.bordered {
+    border: 2px solid #032B43;
+    border-radius: 16px;
+}
+
+#answered {
+    width: 20%;
+    height: auto;
+}
+
+#main-game {
+    width: 50%;
+    height: auto;
+    padding: 1rem;
+}
+
+#attempt {
+    width: 20%;
+    height: auto;
+    padding: 0.5rem;
+}
+
+#attempt button {
+    width: 60%;
+    height: 50px;
+}
+
+
+
+
+#zones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.answer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.attempt-entry {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#zones button {
+    width: 6rem;
+    height: 6rem;
+    font-size: 4rem;
+    border: 1px solid #032B43;
+    border-radius: 16px;
+}
+
+#pieces {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.signage {
+    font-size: 6rem;
+}
+
+.signage-sm {
+    font-size: 3rem;
+}
+
+.zone {
+    width: 6rem;
+    height: 6rem;
+    font-size: 4rem;
+    border: 1px solid #032B43;
+    border-radius: 16px;
+    -webkit-user-select: none;      
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.zone-sm {
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+    border: 1px solid #032B43;
+    border-radius: 16px;
+}
+
+.info {
+    margin: 2rem 1rem;
+}
+
+.piece {
+    width: 6rem;
+    height: 6rem;
+    font-size: 4rem;
+    border: 1px solid #032B43;
+    border-radius: 16px;
+    background-color: #3F88C5;
+    color: #F4F4F9;
+    cursor: pointer;
+    -webkit-user-select: none;      
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;;
+}
+
+.wrong-transition {
+    animation: bgWrongAnim 1s 1;
+}
+
+@keyframes bgWrongAnim {
+    from {
+        background-color: #ffffff;
+    }
+    to {
+        background-color: #F30000;
+    }
+}

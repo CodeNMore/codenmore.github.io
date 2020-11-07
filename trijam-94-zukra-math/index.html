@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zukra Math</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="main.js" type="text/javascript"></script>
+</head>
+<body onload="initPage()">
+    <header>
+        <h1>Zukra Math</h1>
+        A game made in under 3 hours for Trijam #94. Theme: a + b = c
+    </header>
+    <main id="app">
+        <div id="start" v-if="!playingGame">
+            <div>
+                The ancient Zukra tribe was just discovered! Only issue is...we uh...we can't figure out how their mathematics worked.
+                Can you possibly help us out?
+            </div>
+
+            <button v-on:click="startGameLong">Start (Longer Game)</button>
+            <button v-on:click="startGameShort">Start (Shorter Game)</button>
+        </div>
+        
+        <div id="won" v-if="won">
+            <h2>You Cracked the Code!</h2>
+            <div>
+                Woah! You cracked the code of the Zukra tribe's number system!
+                It probably wasn't that hard. Or fun. But I hope you had a little fun :)
+            </div>
+        </div>
+
+        <div class="main-game-area" v-if="playingGame && !won">
+            <div id="answered" class="bordered">
+                <h2>Your Answered Questions</h2>
+
+                <div class="answer" v-for="ans in answers">
+                    <div class="zone-sm">
+                        {{ans.a.sign}}
+                    </div>
+                    <div class="signage-sm">+</div>
+                    <div class="zone-sm">
+                        {{ans.b.sign}}
+                    </div>
+                    <div class="signage-sm">=</div>
+                    <div class="zone-sm">
+                        {{ans.c.sign}}
+                    </div>
+                </div>
+            </div>
+
+            <div id="main-game" class="bordered">
+                <h2>Current Problem</h2>
+
+                <div id="zones">
+                    <div class="zone" id="zoneA" @drop="onDrop($event, 1)" @dragover.prevent @dragenter.prevent>
+                        {{zoneA.sign}}
+                    </div>
+                    <div class="signage">+</div>
+                    <div class="zone" id="zoneB" @drop="onDrop($event, 2)" @dragover.prevent @dragenter.prevent>
+                        {{zoneB.sign}}
+                    </div>
+                    <div class="signage">=</div>
+                    <div class="zone" id="zoneC" @drop="onDrop($event, 3)" @dragover.prevent @dragenter.prevent>
+                        {{zoneC.sign}}
+                    </div>
+                </div>
+
+                <div id="pieces">
+                    <div class="piece" v-for="piece in unusedPieces" :key="piece.id" draggable @dragstart="startDrag($event, piece)">
+                        {{piece.sign}}
+                    </div>
+                </div>
+
+                <div class="info">
+                    Drag and drop the blue Zukra glyphs into the equation to check answers.
+                    <br/>
+                    Once an answer is correct, it will move to your answered questions column.
+                    <br/>
+                    When you think you have enough info to solve the Zukra number system, enter the values in the attempt column to the right and click 'Check!'
+                    <br/>
+                    Some answers may already be filled in on the right, depending on the game mode you chose.
+                </div>
+            </div>
+
+            <div id="attempt" class="bordered">
+                <h2>Attempt</h2>
+
+                <div class="attempt-entry" v-for="ae in attemptPieces">
+                    <div class="zone-sm">
+                        {{ae.sign}}
+                    </div>
+                    <div class="signage-sm">=</div>
+                    <input v-model.number="ae.answer" type="number">
+                </div>
+
+                <button v-on:click="checkAttempt">Check!</button>
+            </div>
+        </transition>
+    </main>
+    <footer>
+        Created by CodeNMore in under 3 hours :)
+    </footer>    
+</body>
+</html>
